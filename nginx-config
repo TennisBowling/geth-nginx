@@ -1,0 +1,15 @@
+server {
+ listen 80;
+ listen [::]:80;
+ server_name;
+ deny    all;
+ location / {
+      proxy_pass http://localhost:8545/;
+      proxy_set_header Host $host;
+ }
+ error_page   403  /403.html;
+ location = /403.html {
+  root   /var/www/html;
+  allow all;
+ }
+}
