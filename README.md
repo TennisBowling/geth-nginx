@@ -24,7 +24,7 @@ Run ```sudo systemctl restart nginx.service```
 The rest is optional and not required, MetaMask will work just the same if you do not enter anything.  
 Enjoy!  
 
-##SSL support  
+## SSL support  
 **WILL NOT WORK IF YOU DO NOT HAVE A DOMAIN**  
 Install ```certbot``` with ```sudo apt-get install certbot python3-certbot-nginx -y```  
 Run ```sudo certbot --nginx``` and follow the prompts  
