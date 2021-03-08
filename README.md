@@ -27,5 +27,10 @@ Enjoy!
 ##SSL support
 **WILL NOT WORK IF YOU DO NOT HAVE A DOMAIN**
 Install ```certbot``` with ```sudo apt-get install certbot python3-certbot-nginx -y``` \
-Run ```sudo certbot --nginx``` and follow the prompts
-
+Run ```sudo certbot --nginx``` and follow the prompts \
+Change the RPC in MetaMask from ```http://<THEIPOFYOURSERVER>``` to ```https://<THEIPOFYOURSERVER>```. \
+To do this 
+ 1. Click on your account icon \ 
+ 2. Click on settings \ 
+ 3. Scroll down to Networks \ 
+ 4. Click on the network you made earlier, changing the url from ```http://<THEIPOFYOURSERVER>``` to ```https://<THEIPOFYOURSERVER>```.
