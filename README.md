@@ -11,7 +11,7 @@ Run geth with the ```--http``` flag. Wait for this to sync. This could take a lo
 Replace ```default``` in ```/etc/nginx/sites-available/``` with ```nginx-config```.  
 Edit ```nginx-config``` with ```sudo nano /etc/nginx/sites-available/nginx-config``` or ```sudo nano /etc/nginx/sites-available/default```.  
 Add the ip/url you are going to access the website from after ```server_name```.  
-Also replace IP (after ```ALLOW```) with the IP that you are allowing to connect to the rpc endpoint. Make a new line with the same format for every new ip.  
+~~Also replace IP (after ```ALLOW```) with the IP that you are allowing to connect to the rpc endpoint. Make a new line with the same format for every new ip.  ~~
 Add ```403.html``` into ```/var/www/html/```  
 Run ```sudo systemctl restart nginx.service```  
 
