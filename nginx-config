@@ -2,8 +2,6 @@ server {
  listen 80;
  listen [::]:80;
  server_name;
- deny    all;
- allow IP;
  location / {
       proxy_pass http://localhost:8545/;
       proxy_set_header Host $host;
