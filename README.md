@@ -7,11 +7,10 @@ A reverse proxy for geth's rpc endpoint.
 port ```80``` or ```443```(OPTIONAL: FOR SSL) open.  
 
 ## Installation
-Run geth with the ```--http``` and `--http.vhosts="*"` flasg. Wait for this to sync. This could take a long time and upwards of a day.  
+Run geth with the ```--http``` and `--http.vhosts="*"` flags. Wait for this to sync. This could take a long time and upwards of a day.  
 Replace ```default``` in ```/etc/nginx/sites-available/``` with ```nginx-config```.  
 Edit ```nginx-config``` with ```sudo nano /etc/nginx/sites-available/nginx-config``` or ```sudo nano /etc/nginx/sites-available/default```.  
 Add the ip/url you are going to access the website from after ```server_name```.  
-~~Also replace IP (after ```ALLOW```) with the IP that you are allowing to connect to the rpc endpoint. Make a new line with the same format for every new ip.  ~~
 Add ```403.html``` into ```/var/www/html/```  
 Run ```sudo systemctl restart nginx.service```  
 
